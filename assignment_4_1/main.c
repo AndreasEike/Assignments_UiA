@@ -4,6 +4,7 @@
 
 #define STRING_LENGTH 100
 
+//Kunne ikke inkludere <stdbool.h>, derfor returnerer funksjonen 1 eller 0 i stedet, som er tilsvarende boolske verdier.
 int reverseCheck(char ord[]) {
     for (int i=0;i<strlen(ord)/2;i++){
         if(ord[i]==ord[strlen(ord)-i-1])
@@ -30,11 +31,14 @@ int main() {
     printf("Skriv inn et ord: ");
     fgets(ord,STRING_LENGTH,stdin);
     ord[strlen(ord)-1]=0;
+
     printf("The word contains %i letters\n",strlen(ord));
+
     reverse(ord);
     if (reverseCheck(ord)==1)
         printf("The word is a palindrome");
     else
         printf("The word is not a palindrome");
+
     return 0;
 }
