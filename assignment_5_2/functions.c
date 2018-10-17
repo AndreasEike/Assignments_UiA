@@ -61,6 +61,7 @@ void readInfo() {
 
     while(!feof(f)) {
         c=fgetc(f);
+        if (c!=(-1))
             printf("%c",c);
     }
     printf("\n");
