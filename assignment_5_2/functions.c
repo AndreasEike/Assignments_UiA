@@ -80,7 +80,7 @@ void readInfo() {
 
             }
 
-            else if ((c > 65 && c < 123) || c==32) {
+            else if ((c > 64 && c < 123) || c==32) {
 
                 if (name!=1) {
                     printf("\n");
