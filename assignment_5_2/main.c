@@ -7,7 +7,7 @@ int main() {
     int meny=0;
     while (meny!=3) {
         meny=0;
-        printf("Skriv inn 1 for å lese student info fra fil.\nSkriv inn 2 for å skrive student informasjon til fil.\nSkriv inn 3 for å avslutte programmet.\n");
+        printf("Enter 1 to read student info from file.\nEnter 2 to write student info to file.\nEnter 3 to exit the program.\n");
         scanf("%i", &meny);
 
         switch(meny) {
