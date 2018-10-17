@@ -59,13 +59,54 @@ void readInfo() {
         printf("Could not open file, exiting program.\n");
     }
 
-    while(!feof(f)) {
-        c=fgetc(f);
-        if (c!=(-1))
-            printf("%c",c);
-    }
-    printf("\n");
 
+    int id;
+    int id1=0;
+    int name=0;
+    int age=0;
+
+    while(!feof(f)) {
+
+        c = fgetc(f);
+
+        if (c != (-1)) {
+
+            if (c > 47 && c < 58 && id != 1) {
+                if (id1!=1) {
+                    id1 = 1;
+                    printf("Student id: ");
+                }
+                printf("%c", c);
+
+            }
+
+            else if ((c > 65 && c < 123) || c==32) {
+
+                if (name!=1) {
+                    printf("\n");
+                    printf("Name: ");
+                    name=1;
+                }
+                id=1;
+                printf("%c", c);
+            }
+
+            else if (c > 47 && c < 58 && id==1) {
+
+                if (age!=1) {
+                    printf("\n");
+                    printf("Age: ");
+                    age=1;
+                }
+                printf("%c", c);
+
+            }
+
+        }
+
+    }
+
+    printf("\n");
     fclose(f);
 
 }
