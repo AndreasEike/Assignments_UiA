@@ -47,16 +47,10 @@ int main() {
 
         printf("Skriv inn din alder: ");
         scanf("%i", &student[i].age);
-        char ageChar=student[i].age;
-
-        if ((ageChar>=47 && ageChar<=58)) {
-            printf("No students were given\n");
-            return 1;
-        }
 
         fgetc(stdin);
         i++;
-        student=realloc(student, (5 * (i) * sizeof(student_t)));
+        student=realloc(student, (5 * i * sizeof(student_t)));
     }
     printf("Count: %i\n",i);
     for (int a=0; a<i; a++) {
