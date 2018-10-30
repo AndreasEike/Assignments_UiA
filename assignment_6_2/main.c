@@ -4,7 +4,7 @@
 #include "functions.h"
 #define STRING_LENGTH 100
 
-int max(student_t student[],int count) {
+int max(student_t student[], int count) {
 
     int age=0;
     int index=0;
@@ -19,9 +19,9 @@ int max(student_t student[],int count) {
     return index;
 }
 
-int min(student_t student[],int count) {
+int min(student_t student[], int count) {
 
-    int age=0;
+    int age=99;
     int index=0;
 
     for (int i=0; i<count; i++) {
