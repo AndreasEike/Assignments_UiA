@@ -37,7 +37,7 @@ int main() {
         fgets(student[i].name,STRING_LENGTH,stdin);
         student[i].name[strlen(student[i].name)-1]=0;
 
-        if (strcmp(student[i].name,"")==0 ||strcmp(student[i].name,"stop")==0 ) {
+        if (strcmp(student[0].name,"")==0 || strcmp(student[0].name,"stop")==0 ) {
             printf("No students were given\n");
             return 1;
         }
