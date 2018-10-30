@@ -21,7 +21,7 @@ int max(student_t student[], int count) {
 
 int min(student_t student[], int count) {
 
-    int age=99;
+    int age=student[max(student,count)].age;
     int index=0;
 
     for (int i=0; i<count; i++) {
