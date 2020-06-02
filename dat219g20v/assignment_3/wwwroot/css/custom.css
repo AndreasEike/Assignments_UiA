@@ -1,0 +1,14 @@
+body, html {
+    height:100%;
+    color:white;
+}
+
+body {
+    background-image: url("https://cms-assets.tutsplus.com/uploads/users/523/posts/27364/final_image/project-preview-large.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.tableBox {
+    background-color:white;
+}

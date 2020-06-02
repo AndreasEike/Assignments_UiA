@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello, welome to my webpage!</h1>
+    <p>My name is <em><strong>Andreas Høiberg Eike</strong></em>, and this is my webpage.</p>
+</div>
+<form class = "form-group"><input class = "form-control mr-sm-2" type = "text" placeholder="Search" aria-label="Search"><button type="submit" class="btn btn-primary">Submit</button></form>
+<div class="box-shadow">
+    <h2>About me:</h2>
+    <h3>My picture:</h3>
+    <img src="pictureOfMe.png" alt="This is me">
+    
+    <h3>Information:</h3>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm">
+                <ul class>
+                    <li>
+                        <p>20 years old</p></li>
+                    <li>
+                        <p>From Haugesund, Norway</p></li>
+                    <li>
+                        <p>Studying computer science at the University of Agder, Grimstad</p></li>
+                </ul>
+            </div>
+
+            <div class="col-sm">
+                <h3>My interests:</h3>
+                <ol>
+                    <li>Football</li>
+                    <li>Video games</li>
+                    <li>Movies</li>
+                    <li>Music</li>
+                    <li>Computer science</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>    
+<div class="alert-info">
+    <h3>My favourite movies:</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Year</th>
+            <th scope="col">Director</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><a id="myId" href="https://www.imdb.com/title/tt0361748/?ref_=nv_sr_srsg_1" target="_blank">Inglorious Basterds</a></td>
+            <td>2009</td>
+            <td>Quentin Tarantino</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td><a id="myId" href = "https://www.imdb.com/title/tt0110912/?ref_=nv_sr_srsg_0" target="_blank">Pulp Fiction</a></td>
+            <td>1994</td>
+            <td>Quentin Tarantino</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td><a id="myId" href="https://www.imdb.com/title/tt0081505/?ref_=nv_sr_srsg_0" target="_blank">The Shining</a></td>
+            <td>1980</td>
+            <td>Stanley Kubrick</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="Box">
+    <p>I am studying computer science because I like working with computers, and I enjoy programming.</p>
+</div>

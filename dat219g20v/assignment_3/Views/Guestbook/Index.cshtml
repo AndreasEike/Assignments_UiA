@@ -1,0 +1,37 @@
+@model PostInfoVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Overlook Hotel guest book!</h1>
+</div>
+
+<form method="post">
+        
+    <div class="form-group">
+        <label asp-for="Post.Name">Your Name</label>
+        <input asp-for="Post.Name" class="form-control" required value=""/>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Post.Title">Message title</label>
+        <input asp-for="Post.Title" class="form-control" required value=""/>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Post.Message">Your message</label>
+        <textarea asp-for="Post.Message"class="form-control"  rows="8" required></textarea>
+    </div>
+    <br/>
+    <div class="input-group">
+        <button class="btn btn-primary" id="Submit">Submit</button>
+    </div>
+</form>
+<br/>
+
+@foreach (var p in Model.Posts)
+{
+    <partial name="_PostPartial", model="p" />
+}

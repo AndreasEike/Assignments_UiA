@@ -1,0 +1,27 @@
+﻿<table>
+    <tr>
+        <td>
+            @* @Html.DisplayFor(modelItem => Model.User.Nickname) *@
+            @Model.User.Nickname
+        </td>
+        <td>
+            @* @Html.DisplayFor(modelItem => Model.Title) *@
+            @Model.Title
+        </td>
+        <td>
+            @* @Html.DisplayFor(modelItem => Model.Summary) *@
+            @Model.Summary
+        </td>
+        <td>
+            @* @Html.DisplayFor(modelItem => Model.Content) *@
+            @Model.Content
+        </td>
+        <td>
+            @* @Html.DisplayFor(modelItem => Model.Time) *@
+            @Model.Time
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        </td>
+    </tr>
+</table>

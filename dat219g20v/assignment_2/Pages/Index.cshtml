@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Kalkulator</h1>
+    <table width="50%" height="50%">
+        <tr>
+            <td colspan="5">
+                <form>
+                    <input type="text" id="display" name="display" disabled/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td><button id="seven" class = "numbers">7</button></td>
+            <td><button id="eight" class = "numbers">8</button></td>
+            <td><button id="nine" class = "numbers">9</button></td>
+            <td><button id="plus" class = "symbols">+</button></td>
+            <td><button id="reset">C</button></td>
+        </tr>
+        <tr>
+            <td><button id="four" class = "numbers">4</button></td>
+            <td><button id="five" class = "numbers">5</button></td>
+            <td><button id="six" class = "numbers">6</button></td>
+            <td><button id="minus" class = "symbols">-</button></td>
+            <td><button id="clear">Ce</button></td>
+        </tr>
+        <tr>
+            <td><button id="one" class = "numbers">1</button></td>
+            <td><button id="two" class = "numbers">2</button></td>
+            <td><button id="three" class = "numbers">3</button></td>
+            <td><button id="multiply" class = "symbols">*</button></td>
+            <td rowspan="2"><button id="equals">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="zero" width="100%" class = "numbers">0</button></td>
+            <td><button id="decimal" class = "symbols">.</button></td>
+            <td><button id="divide" class = "symbols">/</button></td>
+        </tr>
+    </table>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</div>
